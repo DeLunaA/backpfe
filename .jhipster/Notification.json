@@ -1,0 +1,32 @@
+{
+  "changelogDate": "20230903180835",
+  "dto": "no",
+  "entityTableName": "notification",
+  "fields": [
+    {
+      "fieldName": "titre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Notification",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "notification",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
